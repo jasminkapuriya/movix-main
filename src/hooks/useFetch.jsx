@@ -5,6 +5,8 @@ const useFetch = (url) => {
     const [loading, setLoading] = useState(null);
     const [error, setError] = useState(null);
 
+    /* The `useEffect` hook is used to perform side effects in a React component. In this case, it is
+    used to fetch data from an API when the `url` dependency changes. */
     useEffect(() => {
         setLoading("loading...");
         setData(null);
